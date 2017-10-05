@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: 'Asap', sans-serif;
+  color: #fc1f4e;
+}
+
+.alpaca-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.alpaca-container .mr-alpaca-logo {
+  background-image: url(../images/mr_alpaca/logo.png);
+  background-size: 400px;
+  width: 400px;
+  height: 400px;
+}
