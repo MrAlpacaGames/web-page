@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <!-- styles -->
-  <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
-  <title>Mr. Alpaca Games</title>
-</head>
-<body>
-  <div class="container">
-    <div class="alpaca-container">
-      <div class="mr-alpaca-logo"></div>
-      <h1>Site under construction</h1>
-      <h2>Can't wait? click below to know about us</h2>
-      <div class="social-container">
-        <a class="social-link"
-          title="Facebook"
-          href="https://www.facebook.com/MrAlpacaGames/"
-          target="blank">
-          <i class="icon-facebook-squared social-icon"></i>
-          <span class="icon-text">Facebook</span>
-        </a>
-        <a class="social-link"
-          title="Instagram"
-          href="https://www.instagram.com/mralpacagames/"
-          target="blank">
-          <i class="icon-instagram social-icon"></i>
-          <span class="icon-text">Instagram</span>
-        </a>
-        <a class="social-link"
-          title="Development Blog"
-          href="http://mralpacagames.blogspot.com.co/"
-          target="blank">
-          <i class="icon-blogger-rect social-icon"></i>
-          <span class="icon-text">Creation Blog</span>
-        </a>
-      </div>
-    </div>
-    <div class="kote-container"></div>
-  </div>
-</body>
+<html ng-app="ngBoilerplate" ng-controller="AppCtrl">
+  <head>
+    <title ng-bind="pageTitle"></title>
+
+    <!-- social media tags -->
+    <!--
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@joshdmiller">
+    <meta name="twitter:title" content="ngBoilerplate">
+    <meta name="twitter:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+    <meta name="twitter:creator" content="@joshdmiller">
+    <meta name="twitter:image:src" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846">
+    <meta property="og:title" content="ngBoilerplate" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://bit.ly/ngBoilerplate" />
+    <meta property="og:image" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846" />
+    <meta property="og:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font awesome from BootstrapCDN -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- compiled CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/ngbp-0.3.2.css" />
+
+    <!-- compiled JavaScript -->
+    <script type="text/javascript" src="assets/ngbp-0.3.2.js"></script>
+
+    <!-- it's stupid to have to load it here, but this is for the +1 button -->
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+      { "parsetags": "explicit" }
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid" ui-view="main"></div>
+    <script src="http://192.168.0.2:35729/livereload.js?snipver=1"></script>
+  </body>
 </html>
