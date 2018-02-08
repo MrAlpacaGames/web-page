@@ -275,7 +275,7 @@ angular.module("home/characters/characters.tpl.html", []).run(["$templateCache",
     "<div class=\"characters-container\">\n" +
     "  <div class=\"characters-wrapper row\">\n" +
     "    <!-- Archivald -->\n" +
-    "    <div class=\"character col-xs-3\">\n" +
+    "    <div class=\"character col-xs-12 col-sm-3\">\n" +
     "      <div class=\"img-container\">\n" +
     "        <img class=\"egg-img\" src=\"assets/images/kote/Archivald_Normal.png\" alt=\"Kai\">\n" +
     "      </div>\n" +
@@ -289,7 +289,7 @@ angular.module("home/characters/characters.tpl.html", []).run(["$templateCache",
     "    </div>\n" +
     "\n" +
     "    <!-- Arsger -->\n" +
-    "    <div class=\"character col-xs-3\">\n" +
+    "    <div class=\"character col-xs-12 col-sm-3\">\n" +
     "      <div class=\"img-container\">\n" +
     "        <img class=\"egg-img\" src=\"assets/images/kote/Arsger_Normal.png\" alt=\"Kai\">\n" +
     "      </div>\n" +
@@ -303,7 +303,7 @@ angular.module("home/characters/characters.tpl.html", []).run(["$templateCache",
     "    </div>\n" +
     "\n" +
     "    <!-- Kai -->\n" +
-    "    <div class=\"character col-xs-3\">\n" +
+    "    <div class=\"character col-xs-12 col-sm-3\">\n" +
     "        <div class=\"img-container\">\n" +
     "          <img class=\"egg-img\" src=\"assets/images/kote/Kai_Normal.png\" alt=\"Kai\">\n" +
     "        </div>\n" +
@@ -317,7 +317,7 @@ angular.module("home/characters/characters.tpl.html", []).run(["$templateCache",
     "      </div>\n" +
     "\n" +
     "      <!-- Oswald -->\n" +
-    "    <div class=\"character col-xs-3\">\n" +
+    "    <div class=\"character col-xs-12 col-sm-3\">\n" +
     "        <div class=\"img-container\">\n" +
     "          <img class=\"egg-img\" src=\"assets/images/kote/Oswald_Normal.png\" alt=\"Kai\">\n" +
     "        </div>\n" +
@@ -437,8 +437,6 @@ angular.module("home/social-menu/social-menu.tpl.html", []).run(["$templateCache
     "\n" +
     "  <!-- description -->\n" +
     "  <div class=\"text-container row\">\n" +
-    "    <!-- <h4 class=\"text\">Made by <b>Mr. Alpaca Games</b>, we make games we love to play</h4> -->\n" +
-    "    <!-- <h4 class=\"text\"><b>Mr. Alpaca Games</b></h4> -->\n" +
     "    <h5 class=\"text\">We make games that we would love to play</h5>\n" +
     "  </div>\n" +
     "\n" +
@@ -448,45 +446,45 @@ angular.module("home/social-menu/social-menu.tpl.html", []).run(["$templateCache
     "      title=\"Facebook\"\n" +
     "      href=\"https://www.facebook.com/MrAlpacaGames/\"\n" +
     "      target=\"blank\">\n" +
-    "      <i class=\"icon-facebook-squared social-icon\"></i>\n" +
-    "      <!-- <span class=\"icon-text\">Facebook</span> -->\n" +
+    "      <i class=\"icon-facebook_circle social-icon\"></i>\n" +
     "    </a>\n" +
     "    <a class=\"social-link\"\n" +
     "      title=\"Instagram\"\n" +
     "      href=\"https://www.instagram.com/mralpacagames/\"\n" +
     "      target=\"blank\">\n" +
-    "      <i class=\"icon-instagram social-icon\"></i>\n" +
-    "      <!-- <span class=\"icon-text\">Instagram</span> -->\n" +
+    "      <i class=\"icon-instagram_circle social-icon\"></i>\n" +
     "    </a>\n" +
     "    <a class=\"social-link\"\n" +
     "      title=\"Development Blog\"\n" +
     "      href=\"http://mralpacagames.blogspot.com.co/\"\n" +
     "      target=\"blank\">\n" +
-    "      <i class=\"icon-blogger-rect social-icon\"></i>\n" +
-    "      <!-- <span class=\"icon-text\">Creation Blog</span> -->\n" +
+    "      <i class=\"icon-blogger_circle social-icon\"></i>\n" +
     "    </a>\n" +
     "  </div>\n" +
-    "\n" +
-    "  <!-- <div class=\"tail\"></div> -->\n" +
     "</div>");
 }]);
 
 angular.module("home/title-bar/title-bar.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("home/title-bar/title-bar.tpl.html",
     "<div class=\"title-bar-container\">\n" +
-    "  <div class=\"parallax-container\">\n" +
-    "    <!-- <p class=\"parallax\">The parallax thing will be here</p> -->\n" +
-    "    <div id=\"parallax-wrapper\" class=\"parallax-art\">\n" +
-    "      <div id=\"parallax-img-0\" class=\"parallax-layer parallax\" data-speed=\"20\"></div>\n" +
-    "      <div id=\"parallax-img-1\" class=\"parallax-layer parallax\" data-speed=\"40\"></div>\n" +
-    "      <div id=\"parallax-img-2\" class=\"parallax-layer parallax\" data-speed=\"75\"></div>\n" +
-    "      <div id=\"parallax-img-3\" class=\"parallax-layer parallax\" data-speed=\"95\"></div>\n" +
-    "      <div id=\"parallax-img-4\" class=\"parallax-layer parallax\" data-speed=\"45\"></div>\n" +
-    "      <div id=\"parallax-img-5\" class=\"parallax-layer parallax\" data-speed=\"25\"></div>\n" +
-    "      <div id=\"parallax-img-6\" class=\"parallax-layer parallax\" data-speed=\"2\"></div>\n" +
-    "    </div>\n" +
+    "  <div id=\"parallax-container\">\n" +
+    "    <!-- The Hegg & The Eggaterious -->\n" +
+    "    <div id=\"parallax-img-1\" class=\"parallax-layer parallax\" data-speed=\"15\"></div>\n" +
+    "    <!-- Eggorias (without Airheads) -->\n" +
+    "    <div id=\"parallax-img-2\" class=\"parallax-layer parallax\" data-speed=\"19\"></div>\n" +
+    "    <!-- Airheads -->\n" +
+    "    <div id=\"parallax-img-3\" class=\"parallax-layer parallax\" data-speed=\"13\"></div>\n" +
+    "    <!-- Archivald -->\n" +
+    "    <div id=\"parallax-img-4\" class=\"parallax-layer parallax\" data-speed=\"28\"></div>\n" +
+    "    <!-- Kai -->\n" +
+    "    <div id=\"parallax-img-5\" class=\"parallax-layer parallax\" data-speed=\"38\"></div>\n" +
+    "    <!-- Oswald -->\n" +
+    "    <div id=\"parallax-img-6\" class=\"parallax-layer parallax\" data-speed=\"52\"></div>\n" +
+    "    <!-- Arsger -->\n" +
+    "    <div id=\"parallax-img-7\" class=\"parallax-layer parallax\" data-speed=\"68\"></div>\n" +
+    "    <!-- Logo -->\n" +
+    "    <div id=\"parallax-img-8\" class=\"parallax-layer parallax\" data-speed=\"3\"></div>\n" +
     "  </div>\n" +
-    "  <!-- <div class=\"logo\"></div> -->\n" +
     "</div>");
 }]);
 
