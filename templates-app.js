@@ -344,7 +344,7 @@ angular.module("home/features/features.tpl.html", []).run(["$templateCache", fun
     "  <div class=\"features-wrapper\">\n" +
     "    <div class=\"feature row\">\n" +
     "      <div class=\"img-container col\">\n" +
-    "        <img src=\"assets/images/kote/feature.png\" alt=\"\">\n" +
+    "        <img src=\"assets/images/kote/feature_01.gif\" alt=\"\">\n" +
     "      </div>\n" +
     "      <div class=\"desc-container col\">\n" +
     "        <h4>\n" +
@@ -355,7 +355,7 @@ angular.module("home/features/features.tpl.html", []).run(["$templateCache", fun
     "  \n" +
     "    <div class=\"feature row\">\n" +
     "      <div class=\"img-container col\">\n" +
-    "        <img src=\"assets/images/kote/feature.png\" alt=\"\">\n" +
+    "        <img src=\"assets/images/kote/feature_02.gif\" alt=\"\">\n" +
     "      </div>\n" +
     "      <div class=\"desc-container col\">\n" +
     "        <h4>\n" +
@@ -366,7 +366,7 @@ angular.module("home/features/features.tpl.html", []).run(["$templateCache", fun
     "  \n" +
     "    <div class=\"feature row\">\n" +
     "      <div class=\"img-container col\">\n" +
-    "        <img src=\"assets/images/kote/feature.png\" alt=\"\">\n" +
+    "        <img src=\"assets/images/kote/feature_03.gif\" alt=\"\">\n" +
     "      </div>\n" +
     "      <div class=\"desc-container col\">\n" +
     "        <h4>\n" +

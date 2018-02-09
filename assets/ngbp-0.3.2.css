@@ -6016,9 +6016,6 @@ strong {
 .social-menu-container .social-buttons-container .button-wrapper:not(:last-child) {
   margin-right: 10px;
 }
-.social-menu-container .social-buttons-container .button-wrapper:hover .social-icon {
-  opacity: 1;
-}
 .social-menu-container .social-buttons-container .button-wrapper .social-link {
   display: flex;
   text-decoration: none;
@@ -6061,6 +6058,9 @@ strong {
   position: absolute;
   top: 0;
   left: 0;
+}
+.social-menu-container .social-buttons-container .button-wrapper .social-link .social-icon:hover {
+  opacity: 1;
 }
 .title-bar-container {
   position: relative;
