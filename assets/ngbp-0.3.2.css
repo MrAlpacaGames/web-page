@@ -5843,8 +5843,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  width: 100vw;
-  height: 100vh;
 }
 body {
   box-sizing: border-box;
@@ -5918,6 +5916,12 @@ strong {
   height: 18px;
   z-index: 2;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .top-border {
+    height: 60px;
+    z-index: 1;
+  }
+}
 .game-content-container {
   width: 100%;
   margin: 20px auto;
@@ -5941,19 +5945,49 @@ strong {
   position: absolute;
   top: 0;
   left: 16px;
-  width: 160px;
+  width: 180px;
   height: auto;
   background-color: #fc1f4e;
-  z-index: 1;
-  transition: top 0.6s ease-out;
-  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   padding-bottom: 20px;
+  z-index: 1;
 }
-.social-menu-container.secret {
-  top: -125px;
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .social-menu-container {
+    display: flex;
+    height: 60px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0;
+    padding-bottom: 0;
+    z-index: 2;
+  }
 }
-.social-menu-container .row {
-  margin: 0;
+.social-menu-container .logo-container {
+  height: 180px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .social-menu-container .logo-container {
+    width: 60px;
+    height: 60px;
+  }
+}
+.social-menu-container .logo-container .logo {
+  background-image: url(images/mr_alpaca/logo_white.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .social-menu-container .logo-container .logo {
+    margin-top: 0;
+  }
 }
 .social-menu-container .text-container {
   width: 80%;
@@ -5963,51 +5997,70 @@ strong {
 .social-menu-container .text-container .text {
   text-align: center;
 }
-.social-menu-container .tail {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  border-left: 80px solid transparent;
-  border-right: 80px solid transparent;
-  border-top: 80px solid #fc1f4e;
-}
-.logo-container .logo {
-  background-image: url(images/mr_alpaca/logo_white.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 80%;
-  height: 128px;
-  margin: 0 auto;
-  margin-top: 15px;
-}
-.social-buttons {
+.social-menu-container .social-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   width: 80%;
   margin: 0 auto !important;
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
 }
-.social-link {
-  font-size: 1em;
-  text-align: center;
-  text-decoration: none;
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .social-menu-container .social-buttons-container {
+    width: auto;
+    margin-top: 0;
+  }
 }
-.social-link:hover,
-.social-link:active,
-.social-link:visited {
-  text-decoration: none;
-}
-.social-link:last-child .social-icon {
-  margin-right: 0;
-}
-.social-link .social-icon {
-  font-size: 32px;
-  text-decoration: none;
+.social-menu-container .social-buttons-container .button-wrapper:not(:last-child) {
   margin-right: 10px;
 }
-.social-link .social-icon:before {
+.social-menu-container .social-buttons-container .button-wrapper:hover .social-icon {
+  opacity: 1;
+}
+.social-menu-container .social-buttons-container .button-wrapper .social-link {
+  display: flex;
+  text-decoration: none;
+  width: 32px;
+  height: 32px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .social-menu-container .social-buttons-container .button-wrapper .social-link {
+    width: 40px;
+    height: 40px;
+  }
+}
+.social-menu-container .social-buttons-container .button-wrapper .social-link:hover,
+.social-menu-container .social-buttons-container .button-wrapper .social-link:active,
+.social-menu-container .social-buttons-container .button-wrapper .social-link:visited {
+  text-decoration: none;
+}
+.social-menu-container .social-buttons-container .button-wrapper .social-link:last-child .social-icon {
+  margin-right: 0;
+}
+.social-menu-container .social-buttons-container .button-wrapper .social-link .social-icon {
+  font-size: 32px;
+  text-decoration: none;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  opacity: .8;
+  transition: opacity 0.3s ease-out;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .social-menu-container .social-buttons-container .button-wrapper .social-link .social-icon {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+  }
+}
+.social-menu-container .social-buttons-container .button-wrapper .social-link .social-icon:before {
   margin: 0;
   padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .title-bar-container {
   position: relative;
@@ -6022,7 +6075,12 @@ strong {
   width: 100%;
   overflow: hidden;
   margin-top: 18px;
-  padding-bottom: 150%;
+  padding-bottom: 134%;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .title-bar-container #parallax-container {
+    margin-top: 60px;
+  }
 }
 .title-bar-container #parallax-container .parallax-layer {
   position: absolute;
@@ -6063,12 +6121,10 @@ strong {
 .trailer-container .trailer-wrapper {
   margin: 0 auto;
   text-align: center;
+  width: 90%;
 }
 .trailer-container .trailer-wrapper .youtube-iframe {
   width: 100%;
-  max-width: 890px;
-  height: 500px;
-  margin: 0 auto;
 }
 .trailer-container .description-container {
   margin: 20px auto;
@@ -6147,7 +6203,11 @@ strong {
     margin-left: 0;
   }
   .features-container .features-wrapper .feature .img-container {
+    width: 100%;
     order: 1;
+  }
+  .features-container .features-wrapper .feature .img-container img {
+    width: 100%;
   }
   .features-container .features-wrapper .feature .desc-container {
     margin-left: 0;

@@ -431,35 +431,57 @@ angular.module("home/social-menu/social-menu.tpl.html", []).run(["$templateCache
   $templateCache.put("home/social-menu/social-menu.tpl.html",
     "<div class=\"social-menu-container\">\n" +
     "  <!-- logo -->\n" +
-    "  <div class=\"logo-container row\">\n" +
+    "  <div class=\"logo-container\">\n" +
     "    <div class=\"logo\"></div>\n" +
     "  </div>\n" +
     "\n" +
     "  <!-- description -->\n" +
-    "  <div class=\"text-container row\">\n" +
+    "  <div class=\"text-container hidden-xs\">\n" +
     "    <h5 class=\"text\">We make games that we would love to play</h5>\n" +
     "  </div>\n" +
     "\n" +
     "  <!-- social networks buttons -->\n" +
-    "  <div class=\"social-buttons row\">\n" +
-    "    <a class=\"social-link\"\n" +
-    "      title=\"Facebook\"\n" +
-    "      href=\"https://www.facebook.com/MrAlpacaGames/\"\n" +
-    "      target=\"blank\">\n" +
-    "      <i class=\"icon-facebook_circle social-icon\"></i>\n" +
-    "    </a>\n" +
-    "    <a class=\"social-link\"\n" +
-    "      title=\"Instagram\"\n" +
-    "      href=\"https://www.instagram.com/mralpacagames/\"\n" +
-    "      target=\"blank\">\n" +
-    "      <i class=\"icon-instagram_circle social-icon\"></i>\n" +
-    "    </a>\n" +
-    "    <a class=\"social-link\"\n" +
-    "      title=\"Development Blog\"\n" +
-    "      href=\"http://mralpacagames.blogspot.com.co/\"\n" +
-    "      target=\"blank\">\n" +
-    "      <i class=\"icon-blogger_circle social-icon\"></i>\n" +
-    "    </a>\n" +
+    "  <div class=\"social-buttons-container\">\n" +
+    "    <!-- Facebook -->\n" +
+    "    <div class=\"button-wrapper\">\n" +
+    "      <a class=\"social-link\"\n" +
+    "        title=\"Facebook\"\n" +
+    "        href=\"https://www.facebook.com/MrAlpacaGames/\"\n" +
+    "        target=\"blank\">\n" +
+    "        <i class=\"icon-facebook_circle social-icon\"></i>\n" +
+    "      </a>\n" +
+    "    </div>\n" +
+    "\n" +
+    "    <!-- Instagram -->\n" +
+    "    <div class=\"button-wrapper\">\n" +
+    "      <a class=\"social-link\"\n" +
+    "        title=\"Instagram\"\n" +
+    "        href=\"https://www.instagram.com/mralpacagames/\"\n" +
+    "        target=\"blank\">\n" +
+    "        <i class=\"icon-instagram_circle social-icon\"></i>\n" +
+    "      </a>\n" +
+    "    </div>\n" +
+    "\n" +
+    "    <!-- Twitter -->\n" +
+    "    <div class=\"button-wrapper\">\n" +
+    "      <a class=\"social-link\"\n" +
+    "        title=\"Twitter\"\n" +
+    "        href=\"https://twitter.com/MrAlpacaGames\"\n" +
+    "        target=\"blank\">\n" +
+    "        <i class=\"icon-twitter_circle social-icon\"></i>\n" +
+    "      </a>\n" +
+    "    </div>\n" +
+    "\n" +
+    "    <!-- Development Blog -->\n" +
+    "    <div class=\"button-wrapper\">\n" +
+    "      <a class=\"social-link\"\n" +
+    "        title=\"Development Blog\"\n" +
+    "        href=\"http://mralpacagames.blogspot.com.co/\"\n" +
+    "        target=\"blank\">\n" +
+    "        <i class=\"icon-blogger_circle social-icon\"></i>\n" +
+    "      </a>\n" +
+    "    </div>\n" +
+    "\n" +
     "  </div>\n" +
     "</div>");
 }]);
@@ -469,21 +491,21 @@ angular.module("home/title-bar/title-bar.tpl.html", []).run(["$templateCache", f
     "<div class=\"title-bar-container\">\n" +
     "  <div id=\"parallax-container\">\n" +
     "    <!-- The Hegg & The Eggaterious -->\n" +
-    "    <div id=\"parallax-img-1\" class=\"parallax-layer parallax\" data-speed=\"15\"></div>\n" +
+    "    <div id=\"parallax-img-1\" class=\"parallax-layer parallax\" data-scroll=\"0.08\" data-yoffset=\"300\"></div>\n" +
     "    <!-- Eggorias (without Airheads) -->\n" +
-    "    <div id=\"parallax-img-2\" class=\"parallax-layer parallax\" data-speed=\"19\"></div>\n" +
+    "    <div id=\"parallax-img-2\" class=\"parallax-layer parallax\" data-scroll=\"0.05\" data-yoffset=\"100\"></div>\n" +
     "    <!-- Airheads -->\n" +
-    "    <div id=\"parallax-img-3\" class=\"parallax-layer parallax\" data-speed=\"13\"></div>\n" +
+    "    <div id=\"parallax-img-3\" class=\"parallax-layer parallax\" data-scroll=\"0.10\" data-yoffset=\"100\"></div>\n" +
     "    <!-- Archivald -->\n" +
-    "    <div id=\"parallax-img-4\" class=\"parallax-layer parallax\" data-speed=\"28\"></div>\n" +
+    "    <div id=\"parallax-img-4\" class=\"parallax-layer parallax\" data-scroll=\"0.18\" data-yoffset=\"0\"></div>\n" +
     "    <!-- Kai -->\n" +
-    "    <div id=\"parallax-img-5\" class=\"parallax-layer parallax\" data-speed=\"38\"></div>\n" +
+    "    <div id=\"parallax-img-5\" class=\"parallax-layer parallax\" data-scroll=\"0.25\" data-yoffset=\"0\"></div>\n" +
     "    <!-- Oswald -->\n" +
-    "    <div id=\"parallax-img-6\" class=\"parallax-layer parallax\" data-speed=\"52\"></div>\n" +
+    "    <div id=\"parallax-img-6\" class=\"parallax-layer parallax\" data-scroll=\"0.38\" data-yoffset=\"0\"></div>\n" +
     "    <!-- Arsger -->\n" +
-    "    <div id=\"parallax-img-7\" class=\"parallax-layer parallax\" data-speed=\"68\"></div>\n" +
+    "    <div id=\"parallax-img-7\" class=\"parallax-layer parallax\" data-scroll=\"0.45\" data-yoffset=\"0\"></div>\n" +
     "    <!-- Logo -->\n" +
-    "    <div id=\"parallax-img-8\" class=\"parallax-layer parallax\" data-speed=\"3\"></div>\n" +
+    "    <div id=\"parallax-img-8\" class=\"parallax-layer parallax\" data-scroll=\"0.01\" data-yoffset=\"0\"></div>\n" +
     "  </div>\n" +
     "</div>");
 }]);
@@ -492,10 +514,13 @@ angular.module("home/trailer/trailer.tpl.html", []).run(["$templateCache", funct
   $templateCache.put("home/trailer/trailer.tpl.html",
     "<div class=\"trailer-container\">\n" +
     "  <!-- YouTube video -->\n" +
-    "  <div class=\"trailer-wrapper\">\n" +
+    "  <div class=\"trailer-wrapper\"\n" +
+    "    data-original-height=\"1080\"\n" +
+    "    data-original-width=\"1920\">\n" +
     "    <iframe class=\"youtube-iframe\"\n" +
-    "      src=\"https://www.youtube.com/embed/zeBevUptuWc?rel=0\"\n" +
+    "      src=\"https://www.youtube.com/embed/_9y7s3Ykax4?rel=0\"\n" +
     "      frameborder=\"0\"\n" +
+    "      allow=\"autoplay; encrypted-media\"\n" +
     "      allowfullscreen>\n" +
     "    </iframe>\n" +
     "  </div>\n" +
