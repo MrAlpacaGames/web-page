@@ -5845,11 +5845,11 @@ body {
   height: 100%;
 }
 body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: #fafafa;
   font-family: 'Asap', sans-serif;
+  box-sizing: border-box;
 }
 body * {
   color: #fafafa;
@@ -6142,6 +6142,9 @@ strong {
 .trailer-container .platforms-container .text-black {
   margin-bottom: 10px;
 }
+.trailer-container .platforms-container .text-red {
+  font-size: 1.6em;
+}
 .trailer-container .platforms-container .platform-link {
   text-decoration: none;
 }
@@ -6215,6 +6218,19 @@ strong {
     order: 2;
   }
 }
+.features-container .features-wrapper .feature .desc-container .title {
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed #531718;
+  margin-bottom: 10px;
+}
+.features-container .features-wrapper .feature .desc-container .description {
+  text-align: justify;
+}
+.features-container .features-wrapper .feature .desc-container .description b {
+  color: gold;
+}
 .characters-container {
   padding: 0 15px;
 }
@@ -6255,7 +6271,21 @@ strong {
 .characters-container .characters-wrapper .desc-container .egg-name {
   margin-top: 20px;
   font-weight: bold;
-  color: #c44f49;
+  color: #212121;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+.characters-container .characters-wrapper .desc-container .egg-name#archivald {
+  background-color: #dce261;
+}
+.characters-container .characters-wrapper .desc-container .egg-name#arsger {
+  background-color: #6bcbe8;
+}
+.characters-container .characters-wrapper .desc-container .egg-name#kai {
+  background-color: #e34752;
+}
+.characters-container .characters-wrapper .desc-container .egg-name#oswald {
+  background-color: #6be561;
 }
 .characters-container .characters-wrapper .desc-container .egg-phrase,
 .characters-container .characters-wrapper .desc-container .egg-phrase * {
