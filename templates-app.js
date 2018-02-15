@@ -267,7 +267,7 @@ angular.module("home/trailer/trailer.tpl.html", []).run(["$templateCache", funct
     "\n" +
     "  <!-- Platforms for purchase and download -->\n" +
     "  <div class=\"platforms-container\">\n" +
-    "    <h2 class=\"text-black\">Available <b class=\"text-red\">February 17, 2018</b> on</h2>\n" +
+    "    <h2 class=\"text-black\">Available <b class=\"text-red\">February 15, 2018</b> on</h2>\n" +
     "    <a href=\"http://store.steampowered.com/app/733870/King_of_the_Eggs/\"\n" +
     "      class=\"steam platform-link\"\n" +
     "      target=\"blank\"\n" +
