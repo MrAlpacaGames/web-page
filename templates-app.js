@@ -251,7 +251,7 @@ angular.module("home/trailer/trailer.tpl.html", []).run(["$templateCache", funct
     "    data-original-height=\"1080\"\n" +
     "    data-original-width=\"1920\">\n" +
     "    <iframe class=\"youtube-iframe\"\n" +
-    "      src=\"https://www.youtube.com/embed/_9y7s3Ykax4?rel=0\"\n" +
+    "      src=\"https://www.youtube.com/embed/aWrA21FRrA0\"\n" +
     "      frameborder=\"0\"\n" +
     "      allow=\"autoplay; encrypted-media\"\n" +
     "      allowfullscreen>\n" +
