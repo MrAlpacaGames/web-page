@@ -1,4 +1,4 @@
-angular.module('templates-app', ['home/characters/characters.tpl.html', 'home/features/features.tpl.html', 'home/footer/footer.tpl.html', 'home/home.tpl.html', 'home/social-menu/social-menu.tpl.html', 'home/title-bar/title-bar.tpl.html', 'home/trailer/trailer.tpl.html']);
+angular.module('templates-app', ['home/characters/characters.tpl.html', 'home/features/features.tpl.html', 'home/footer/footer.tpl.html', 'home/home.tpl.html', 'home/social-menu/social-menu.tpl.html', 'home/sticky-bar/sticky-bar.tpl.html', 'home/title-bar/title-bar.tpl.html', 'home/trailer/trailer.tpl.html']);
 
 angular.module("home/characters/characters.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("home/characters/characters.tpl.html",
@@ -122,6 +122,38 @@ angular.module("home/footer/footer.tpl.html", []).run(["$templateCache", functio
     "      alt=\"King of the Eggs\"\n" +
     "      class=\"kote-logo footer-logo\">\n" +
     "  </div>\n" +
+    "  <!--Social Media-->\n" +
+    "  <div class=\"logos-wrapper\">\n" +
+    "      <div class=\"button-wrapper\">\n" +
+    "      <a class=\"social-link\"\n" +
+    "      title=\"Facebook\"\n" +
+    "      href=\"https://www.facebook.com/MrAlpacaGames/\"\n" +
+    "      target=\"blank\">\n" +
+    "      <i class=\"icon-facebook_square social-icon\"></i>\n" +
+    "      </a>\n" +
+    "\n" +
+    "      <a class=\"social-link\"\n" +
+    "      title=\"Instagram\"\n" +
+    "      href=\"https://www.instagram.com/mralpacagames/\"\n" +
+    "      target=\"blank\">\n" +
+    "      <i class=\"icon-instagram_square social-icon\"></i>\n" +
+    "      </a>\n" +
+    "\n" +
+    "      <a class=\"social-link\"\n" +
+    "      title=\"Twitter\"\n" +
+    "      href=\"https://twitter.com/MrAlpacaGames\"\n" +
+    "      target=\"blank\">\n" +
+    "      <i class=\"icon-twitter_square social-icon\"></i>\n" +
+    "      </a>\n" +
+    "\n" +
+    "      <a class=\"social-link\"\n" +
+    "        title=\"Development Blog\"\n" +
+    "        href=\"http://mralpacagames.blogspot.com.co/\"\n" +
+    "        target=\"blank\">\n" +
+    "        <i class=\"icon-blogger_square social-icon\"></i>\n" +
+    "      </a>\n" +
+    "      </div>\n" +
+    "  </div>\n" +
     "  <div class=\"copyright-wrapper\">\n" +
     "    <h5 class=\"copyright-text\">Mr. Alpaca Games, 2018</h5>\n" +
     "    <h5 class=\"copyright-text\">All rights reserved</h5>\n" +
@@ -134,7 +166,7 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
     "<!-- Header -->\n" +
     "<div class=\"top-border\"></div>\n" +
     "<div ng-include=\"'home/social-menu/social-menu.tpl.html'\"></div>\n" +
-    "\n" +
+    "<!--div ng-include=\"'home/sticky-bar/sticky-bar.tpl.html'\"></div-->\n" +
     "<!-- Title bar (cool parallax) -->\n" +
     "<div ng-include=\"'home/title-bar/title-bar.tpl.html'\"></div>\n" +
     "\n" +
@@ -219,6 +251,15 @@ angular.module("home/social-menu/social-menu.tpl.html", []).run(["$templateCache
     "</div>");
 }]);
 
+angular.module("home/sticky-bar/sticky-bar.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("home/sticky-bar/sticky-bar.tpl.html",
+    "<div id=\"navbar\">\n" +
+    "    <a href=\"#home\">Home</a>\n" +
+    "    <a href=\"#news\">News</a>\n" +
+    "    <a href=\"#contact\">Contact</a>\n" +
+    "  </div>");
+}]);
+
 angular.module("home/title-bar/title-bar.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("home/title-bar/title-bar.tpl.html",
     "<div class=\"title-bar-container\">\n" +
@@ -267,12 +308,12 @@ angular.module("home/trailer/trailer.tpl.html", []).run(["$templateCache", funct
     "\n" +
     "  <!-- Platforms for purchase and download -->\n" +
     "  <div class=\"platforms-container\">\n" +
-    "    <h2 class=\"text-black\">Available <b class=\"text-red\">February 15, 2018</b> on</h2>\n" +
+    "    \n" +
     "    <a href=\"http://store.steampowered.com/app/733870/King_of_the_Eggs/\"\n" +
     "      class=\"steam platform-link\"\n" +
     "      target=\"blank\"\n" +
     "      title=\"King of the Eggs on Steam\">\n" +
-    "      <img src=\"assets/images/general/steam_black.svg\" alt=\"Steam\" class=\"platform-img\">\n" +
+    "      <img src=\"assets/images/kote/Available.png\" alt=\"Steam\" class=\"platform-img\">\n" +
     "    </a>\n" +
     "  </div>\n" +
     "</div>");

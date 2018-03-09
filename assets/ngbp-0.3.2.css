@@ -6152,7 +6152,7 @@ strong {
   text-decoration: none;
 }
 .trailer-container .platforms-container .platform-img {
-  height: 64px;
+  height: 200px;
 }
 .trailer-container .platforms-container .platform-img .steam {
   background-repeat: no-repeat;
@@ -6313,6 +6313,10 @@ strong {
 }
 .footer-container .logos-wrapper .footer-logo {
   width: 128px;
+}
+.footer-container .logos-wrapper .footer-media {
+  width: 50px;
+  height: 50px;
 }
 .footer-container .logos-wrapper .mr-alpaca-logo {
   margin-right: 15px;
